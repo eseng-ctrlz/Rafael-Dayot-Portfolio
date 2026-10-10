@@ -14,6 +14,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
   </head>
   <body>
     <header class="site-header">
@@ -213,6 +217,68 @@
         </div>
       </section>
 
+      <section id="projects" class="section">
+        <div class="container">
+          <h2 class="reveal">Projects</h2>
+          <p class="muted reveal">
+            Hands-on lab work covering network simulation, troubleshooting, and
+            physical cabling.
+          </p>
+
+          <div class="grid projects" style="margin-top: 28px">
+            <!-- Project 1: Packet Tracer -->
+            <article class="card project reveal">
+              <svg class="diagram" viewBox="0 0 240 72" aria-hidden="true">
+                <rect x="10" y="26" width="34" height="20" rx="3" />
+                <rect x="103" y="26" width="34" height="20" rx="3" />
+                <rect x="196" y="26" width="34" height="20" rx="3" />
+                <path d="M44 36h59M137 36h59" />
+              </svg>
+              <h3>Basic Network Setup in Cisco Packet Tracer</h3>
+              <p>
+                Designed and simulated a small LAN with a router, a switch, and
+                multiple PCs. Configured IP addressing, verified connectivity
+                with ping, and tested communication between devices.
+              </p>
+              <p class="tags mono">Packet Tracer · IP Addressing · LAN</p>
+            </article>
+
+            <!-- Project 2: Troubleshooting -->
+            <article class="card project reveal">
+              <svg class="diagram" viewBox="0 0 240 72" aria-hidden="true">
+                <circle cx="60" cy="36" r="18" />
+                <path d="M73 49l16 16" />
+                <path d="M120 36h110M120 24h70M120 48h90" />
+              </svg>
+              <h3>Basic Network Troubleshooting</h3>
+              <p>
+                Diagnosed common connectivity problems such as wrong IP
+                settings, disconnected cables, and misconfigured devices using
+                ping, ipconfig, and tracert, working layer by layer from the
+                physical connection up.
+              </p>
+              <p class="tags mono">ping · ipconfig · tracert · Root Cause</p>
+            </article>
+
+            <!-- Project 3: Wiring -->
+            <article class="card project reveal">
+              <svg class="diagram" viewBox="0 0 240 72" aria-hidden="true">
+                <rect x="20" y="22" width="50" height="28" rx="3" />
+                <path d="M70 29h150M70 36h150M70 43h150" />
+                <rect x="190" y="22" width="40" height="28" rx="3" />
+              </svg>
+              <h3>Basic Network Cabling</h3>
+              <p>
+                Terminated Ethernet cable with RJ45 connectors following the
+                T568B standard, then tested each cable for continuity and
+                correct pin order before use.
+              </p>
+              <p class="tags mono">RJ45 · T568B · Cable Testing</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section id="experience" class="section alt">
         <div class="container narrow">
           <h2 class="reveal">Experience</h2>
@@ -281,10 +347,25 @@
 
     <footer class="footer">
       <div class="container">
+        <a
+          href="http://facebook.com/rafael.dayot.9"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Facebook"
+        >
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+
+        <a href="mailto:rafaeldayot@gmail.com" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+
         <p>Network Administration | Infrastructure | Security | Reliability</p>
       </div>
     </footer>
+
     <button id="to-top" class="to-top" aria-label="Back to top">↑</button>
+
     <script src="script.js"></script>
   </body>
 </html>
